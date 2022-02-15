@@ -12,16 +12,12 @@ let operator = ""
 let history = ""
 
 result.addEventListener("click", () => {
-  if (num1 == 0 || num2 == 0 && operator === "÷") {
-    display.innerText = "Ты не можешь разделить на ноль, дурень!"
-  } else {
     num3 = operate(operator, num1, num2)
-    .innerText = num3
+    display.innerText = num3
     num1 = num3;
     console.log(`Третье число: ${num3}`)
     num2 = "";
     num3 = "";
-  }
 })
 
 function operate(operator, num1, num2) {
@@ -83,6 +79,7 @@ operators.forEach((button) => {
       num3 = "";
     }
     operator = e.target.innerText
+    display.innerText = operator
     console.log(operator)
   })
 })
