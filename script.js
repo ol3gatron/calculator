@@ -34,6 +34,8 @@ function operate(operator, num1, num2) {
     return multiply(num1, num2)
   } else if (operator === "÷") {
     return divide(num1, num2)
+  } else if (operator === "nn" || operator === "n") {
+    return power(num1, num2)
   }
 }
 
@@ -51,6 +53,10 @@ function multiply(num1, num2) {
 
 function divide(num1, num2) {
   return num1 / num2
+}
+
+function power(num1, num2) {
+  return num1 ** num2
 }
 
 digits.forEach((button) => {

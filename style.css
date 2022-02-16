@@ -68,6 +68,10 @@ button:hover {
   transform: scale(0.95);
 }
 
+button:disabled {
+  background-color: gray;
+}
+
 .operate {
   background-color: rgb(218, 80, 223);
   opacity: 1;
