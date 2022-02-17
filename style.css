@@ -13,6 +13,7 @@
   justify-content: center;
   align-items: center;
   background-color: #3939a1;
+  flex-direction: column;
 }
 
 .calculator {
@@ -96,4 +97,31 @@ button:disabled {
 
 .historyOutput {
   font-size: 14px;
+}
+
+.color-theme {
+  display: flex;
+}
+
+.color {
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.color.greenish {
+  width: 25px;
+  height: 25px;
+  background-color: rgb(122, 163, 61);
+}
+
+.color.redish {
+  width: 25px;
+  height: 25px;
+  background-color: rgb(224, 54, 139);
+}
+
+.color.blueish {
+  width: 25px;
+  height: 25px;
+  background-color: #3939a1;
 }
